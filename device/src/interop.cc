@@ -34,7 +34,7 @@
 
 static list_t* interop_list = NULL;
 
-static const char* interop_feature_string_(const interop_feature_t feature);
+//static const char* interop_feature_string_(const interop_feature_t feature);
 static void interop_free_entry_(void* data);
 static void interop_lazy_init_(void);
 static bool interop_match_fixed_(const interop_feature_t feature,
@@ -115,23 +115,23 @@ EXPORT_SYMBOL module_t interop_module = {
 
 // Local functions
 
-static const char* interop_feature_string_(const interop_feature_t feature) {
-  switch (feature) {
-    CASE_RETURN_STR(INTEROP_DISABLE_LE_SECURE_CONNECTIONS)
-    CASE_RETURN_STR(INTEROP_AUTO_RETRY_PAIRING)
-    CASE_RETURN_STR(INTEROP_DISABLE_ABSOLUTE_VOLUME)
-    CASE_RETURN_STR(INTEROP_DISABLE_AUTO_PAIRING)
-    CASE_RETURN_STR(INTEROP_KEYBOARD_REQUIRES_FIXED_PIN)
-    CASE_RETURN_STR(INTEROP_2MBPS_LINK_ONLY)
-    CASE_RETURN_STR(INTEROP_HID_PREF_CONN_SUP_TIMEOUT_3S)
-    CASE_RETURN_STR(INTEROP_GATTC_NO_SERVICE_CHANGED_IND)
-    CASE_RETURN_STR(INTEROP_DISABLE_AVDTP_RECONFIGURE)
-    CASE_RETURN_STR(INTEROP_DYNAMIC_ROLE_SWITCH)
-    CASE_RETURN_STR(INTEROP_DISABLE_ROLE_SWITCH)
-  }
-
+// static const char* interop_feature_string_(const interop_feature_t feature) {
+//   switch (feature) {
+//     CASE_RETURN_STR(INTEROP_DISABLE_LE_SECURE_CONNECTIONS)
+//     CASE_RETURN_STR(INTEROP_AUTO_RETRY_PAIRING)
+//     CASE_RETURN_STR(INTEROP_DISABLE_ABSOLUTE_VOLUME)
+//     CASE_RETURN_STR(INTEROP_DISABLE_AUTO_PAIRING)
+//     CASE_RETURN_STR(INTEROP_KEYBOARD_REQUIRES_FIXED_PIN)
+//     CASE_RETURN_STR(INTEROP_2MBPS_LINK_ONLY)
+//     CASE_RETURN_STR(INTEROP_HID_PREF_CONN_SUP_TIMEOUT_3S)
+//     CASE_RETURN_STR(INTEROP_GATTC_NO_SERVICE_CHANGED_IND)
+//     CASE_RETURN_STR(INTEROP_DISABLE_AVDTP_RECONFIGURE)
+//     CASE_RETURN_STR(INTEROP_DYNAMIC_ROLE_SWITCH)
+//     CASE_RETURN_STR(INTEROP_DISABLE_ROLE_SWITCH)
+//   }
+/*
   return "UNKNOWN";
-}
+}*/
 
 static void interop_free_entry_(void* data) {
   interop_addr_entry_t* entry = (interop_addr_entry_t*)data;

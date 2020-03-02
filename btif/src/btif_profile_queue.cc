@@ -114,7 +114,7 @@ static void queue_int_add(uint16_t uuid, const RawAddress& bda,
 static void queue_int_advance() {
   if (connect_queue.empty()) return;
 
-  const ConnectNode& head = connect_queue.front();
+//  const ConnectNode& head = connect_queue.front();
   LOG_INFO(LOG_TAG, "%s: removing connection request: %s", __func__,
            head.ToString().c_str());
   connect_queue.pop_front();

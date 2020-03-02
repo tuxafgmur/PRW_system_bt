@@ -30,11 +30,19 @@
 #define LOGWRAPPER(tag, fmt, args...) \
   fprintf(stderr, "%s: " fmt "\n", tag, ##args)
 
+#if 0
 #define LOG_VERBOSE(...) LOGWRAPPER(__VA_ARGS__)
 #define LOG_DEBUG(...) LOGWRAPPER(__VA_ARGS__)
 #define LOG_INFO(...) LOGWRAPPER(__VA_ARGS__)
 #define LOG_WARN(...) LOGWRAPPER(__VA_ARGS__)
 #define LOG_ERROR(...) LOGWRAPPER(__VA_ARGS__)
+#else
+#define LOG_VERBOSE(...)
+#define LOG_DEBUG(...)
+#define LOG_INFO(...)
+#define LOG_WARN(...)
+#define LOG_ERROR(...) LOGWRAPPER(__VA_ARGS__)
+#endif
 
 #define LOG_EVENT_INT(...)
 
@@ -49,6 +57,7 @@
  * which breaks build on Linux (for OS_GENERIC).
  */
 
+#if 0
 #if LOG_NDEBUG
 #define LOG_VERBOSE(tag, fmt, args...)                          \
   do {                                                          \
@@ -82,5 +91,16 @@
     (true) ? ALOG(LOG_ERROR, tag, fmt, ##args)       \
            : fprintf(stderr, "%s" fmt, tag, ##args); \
   } while (0)
+#else
+#define LOG_VERBOSE(tag, fmt, args...)
+#define LOG_DEBUG(tag, fmt, args...)
+#define LOG_INFO(tag, fmt, args...) 
+#define LOG_WARN(tag, fmt, args...)
+#define LOG_ERROR(tag, fmt, args...)                 \
+  do {                                               \
+    (true) ? ALOG(LOG_ERROR, tag, fmt, ##args)       \
+           : fprintf(stderr, "%s" fmt, tag, ##args); \
+  } while (0)
+#endif
 
 #endif /* defined(OS_GENERIC) */

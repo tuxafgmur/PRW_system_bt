@@ -730,7 +730,7 @@ uint8_t* bnep_process_control_packet(tBNEP_CONN* p_bcb, uint8_t* p,
                      rem_len);
     return NULL;
   }
-  uint16_t rem_len_orig = *rem_len;
+//  uint16_t rem_len_orig = *rem_len;
 
   if (is_ext) {
     if (*rem_len < 1) goto bad_packet_length;

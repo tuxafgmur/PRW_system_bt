@@ -202,9 +202,13 @@ static const char BTE_LOGMSG_MODULE[] = "bte_logmsg_module";
 #define SMP_INITIAL_TRACE_LEVEL BT_TRACE_LEVEL_WARNING
 #endif
 
+#if 0
 #define BT_TRACE(l, t, ...) \
   LogMsg((TRACE_CTRL_GENERAL | (l) | TRACE_ORG_STACK | (t)), ##__VA_ARGS__)
-
+#else
+#define BT_TRACE(l, t, ...)
+#endif
+  
 /* Define tracing for the HCI unit */
 #define HCI_TRACE_ERROR(...)                                      \
   {                                                               \

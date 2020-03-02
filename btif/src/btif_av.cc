@@ -1408,7 +1408,7 @@ bool BtifAvStateMachine::StateIdle::ProcessEvent(uint32_t event, void* p_data) {
       tBTA_AV* p_bta_data = (tBTA_AV*)p_data;
       btav_connection_state_t state;
       int av_state;
-      tBTA_AV_STATUS status = p_bta_data->open.status;
+//      tBTA_AV_STATUS status = p_bta_data->open.status;
       bool can_connect = true;
 
       LOG_INFO(
@@ -1559,7 +1559,7 @@ bool BtifAvStateMachine::StateOpening::ProcessEvent(uint32_t event,
       tBTA_AV* p_bta_data = (tBTA_AV*)p_data;
       btav_connection_state_t state;
       int av_state;
-      tBTA_AV_STATUS status = p_bta_data->open.status;
+//      tBTA_AV_STATUS status = p_bta_data->open.status;
 
       LOG_INFO(
           LOG_TAG, "%s: Peer %s : event=%s flags=%s status=%d(%s) edr=0x%x",

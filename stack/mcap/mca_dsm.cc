@@ -92,12 +92,12 @@ const tMCA_DCB_ST_TBL mca_dcb_st_tbl[] = {mca_dcb_st_opening, mca_dcb_st_open,
                                           mca_dcb_st_closing};
 
 /* verbose event strings for trace */
-const char* const mca_dcb_evt_str[] = {"API_CLOSE_EVT", "API_WRITE_EVT",
-                                       "TC_OPEN_EVT",   "TC_CLOSE_EVT",
-                                       "TC_CONG_EVT",   "TC_DATA_EVT"};
+// const char* const mca_dcb_evt_str[] = {"API_CLOSE_EVT", "API_WRITE_EVT",
+//                                        "TC_OPEN_EVT",   "TC_CLOSE_EVT",
+//                                        "TC_CONG_EVT",   "TC_DATA_EVT"};
 /* verbose state strings for trace */
-const char* const mca_dcb_st_str[] = {"NULL_ST", "OPENING_ST", "OPEN_ST",
-                                      "CLOSING_ST"};
+// const char* const mca_dcb_st_str[] = {"NULL_ST", "OPENING_ST", "OPEN_ST",
+//                                       "CLOSING_ST"};
 
 /*******************************************************************************
  *

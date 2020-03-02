@@ -115,13 +115,13 @@ const tMCA_CCB_ST_TBL mca_ccb_st_tbl[] = {mca_ccb_st_opening, mca_ccb_st_open,
                                           mca_ccb_st_closing};
 
 /* verbose event strings for trace */
-static const char* const mca_ccb_evt_str[] = {
-    "API_CONNECT_EVT", "API_DISCONNECT_EVT", "API_REQ_EVT", "API_RSP_EVT",
-    "MSG_REQ_EVT",     "MSG_RSP_EVT",        "DL_OPEN_EVT", "LL_OPEN_EVT",
-    "LL_CLOSE_EVT",    "LL_CONG_EVT",        "RSP_TOUT_EVT"};
-/* verbose state strings for trace */
-static const char* const mca_ccb_st_str[] = {"NULL_ST", "OPENING_ST", "OPEN_ST",
-                                             "CLOSING_ST"};
+// static const char* const mca_ccb_evt_str[] = {
+//     "API_CONNECT_EVT", "API_DISCONNECT_EVT", "API_REQ_EVT", "API_RSP_EVT",
+//     "MSG_REQ_EVT",     "MSG_RSP_EVT",        "DL_OPEN_EVT", "LL_OPEN_EVT",
+//     "LL_CLOSE_EVT",    "LL_CONG_EVT",        "RSP_TOUT_EVT"};
+// /* verbose state strings for trace */
+// static const char* const mca_ccb_st_str[] = {"NULL_ST", "OPENING_ST", "OPEN_ST",
+//                                              "CLOSING_ST"};
 
 /*******************************************************************************
  *

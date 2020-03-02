@@ -38,13 +38,13 @@
  ****************************************************************************/
 
 /* verbose state strings for trace */
-const char* const avct_lcb_st_str[] = {"LCB_IDLE_ST", "LCB_OPENING_ST",
-                                       "LCB_OPEN_ST", "LCB_CLOSING_ST"};
+// const char* const avct_lcb_st_str[] = {"LCB_IDLE_ST", "LCB_OPENING_ST",
+//                                        "LCB_OPEN_ST", "LCB_CLOSING_ST"};
 
 /* verbose event strings for trace */
-const char* const avct_lcb_evt_str[] = {
-    "UL_BIND_EVT", "UL_UNBIND_EVT", "UL_MSG_EVT", "INT_CLOSE_EVT",
-    "LL_OPEN_EVT", "LL_CLOSE_EVT",  "LL_MSG_EVT", "LL_CONG_EVT"};
+// const char* const avct_lcb_evt_str[] = {
+//     "UL_BIND_EVT", "UL_UNBIND_EVT", "UL_MSG_EVT", "INT_CLOSE_EVT",
+//     "LL_OPEN_EVT", "LL_CLOSE_EVT",  "LL_MSG_EVT", "LL_CONG_EVT"};
 
 /* lcb state machine states */
 enum {

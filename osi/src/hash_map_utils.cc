@@ -77,8 +77,8 @@ hash_map_utils_new_from_string_params(const char* params) {
 
 void hash_map_utils_dump_string_keys_string_values(
     std::unordered_map<std::string, std::string>& map) {
-  for (const auto& ptr : map) {
-    LOG_INFO(LOG_TAG, "key: '%s' value: '%s'\n", ptr.first.c_str(),
-             ptr.second.c_str());
-  }
+//   for (const auto& ptr : map) {
+//     LOG_INFO(LOG_TAG, "key: '%s' value: '%s'\n", ptr.first.c_str(),
+//              ptr.second.c_str());
+//   }
 }

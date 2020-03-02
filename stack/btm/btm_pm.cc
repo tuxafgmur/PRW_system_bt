@@ -76,7 +76,7 @@ const uint8_t
 static int btm_pm_find_acl_ind(const RawAddress& remote_bda);
 static tBTM_STATUS btm_pm_snd_md_req(uint8_t pm_id, int link_ind,
                                      const tBTM_PM_PWR_MD* p_mode);
-static const char* mode_to_string(const tBTM_PM_MODE mode);
+//static const char* mode_to_string(const tBTM_PM_MODE mode);
 
 #if (BTM_PM_DEBUG == TRUE)
 const char* btm_pm_state_str[] = {"pm_active_state", "pm_hold_state",
@@ -948,17 +948,17 @@ tBTM_CONTRL_STATE BTM_PM_ReadControllerState(void) {
     return BTM_CONTRL_IDLE;
 }
 
-static const char* mode_to_string(const tBTM_PM_MODE mode) {
-  switch (mode) {
-    case BTM_PM_MD_ACTIVE:
-      return "ACTIVE";
-    case BTM_PM_MD_SNIFF:
-      return "SNIFF";
-    case BTM_PM_MD_PARK:
-      return "PARK";
-    case BTM_PM_MD_HOLD:
-      return "HOLD";
-    default:
-      return "UNKNOWN";
-  }
-}
+// static const char* mode_to_string(const tBTM_PM_MODE mode) {
+//   switch (mode) {
+//     case BTM_PM_MD_ACTIVE:
+//       return "ACTIVE";
+//     case BTM_PM_MD_SNIFF:
+//       return "SNIFF";
+//     case BTM_PM_MD_PARK:
+//       return "PARK";
+//     case BTM_PM_MD_HOLD:
+//       return "HOLD";
+//     default:
+//       return "UNKNOWN";
+//   }
+//}

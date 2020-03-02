@@ -46,9 +46,9 @@
 /* this is the minimal offset required by OBX to process incoming packets */
 static const uint16_t OBX_BUF_MIN_OFFSET = 4;
 
-static const char* SAR_types[] = {"Unsegmented", "Start", "End",
-                                  "Continuation"};
-static const char* SUP_types[] = {"RR", "REJ", "RNR", "SREJ"};
+// static const char* SAR_types[] = {"Unsegmented", "Start", "End",
+//                                   "Continuation"};
+// static const char* SUP_types[] = {"RR", "REJ", "RNR", "SREJ"};
 
 /* Look-up table for the CRC calculation */
 static const unsigned short crctab[256] = {

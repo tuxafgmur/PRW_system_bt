@@ -53,12 +53,12 @@ typedef struct {
  * Static variables
  ******************************************************************************/
 
-static const char* disc_name[GATT_DISC_MAX] = {"Unknown",
-                                               "GATT_DISC_SRVC_ALL",
-                                               "GATT_DISC_SRVC_BY_UUID",
-                                               "GATT_DISC_INC_SRVC",
-                                               "GATT_DISC_CHAR",
-                                               "GATT_DISC_CHAR_DSCPT"};
+// static const char* disc_name[GATT_DISC_MAX] = {"Unknown",
+//                                                "GATT_DISC_SRVC_ALL",
+//                                                "GATT_DISC_SRVC_BY_UUID",
+//                                                "GATT_DISC_INC_SRVC",
+//                                                "GATT_DISC_CHAR",
+//                                                "GATT_DISC_CHAR_DSCPT"};
 
 static btif_test_cb_t test_cb;
 

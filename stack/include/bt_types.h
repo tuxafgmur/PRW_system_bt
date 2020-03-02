@@ -760,7 +760,7 @@ typedef uint8_t tBT_DEVICE_TYPE;
 #define BT_TRACE_LEVEL_WARNING 2 /* Warning condition trace messages     */
 #define BT_TRACE_LEVEL_API 3     /* API traces                           */
 #define BT_TRACE_LEVEL_EVENT 4   /* Debug messages for events            */
-#define BT_TRACE_LEVEL_DEBUG 5   /* Full debug messages                  */
+#define BT_TRACE_LEVEL_DEBUG 0   /* Full debug messages  --> None        */
 #define BT_TRACE_LEVEL_VERBOSE 6 /* Verbose debug messages               */
 
 #define MAX_TRACE_LEVEL 6

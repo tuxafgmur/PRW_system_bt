@@ -136,7 +136,7 @@ static bt_status_t btsock_listen(btsock_type_t type, const char* service_name,
 
   *sock_fd = INVALID_FD;
   bt_status_t status = BT_STATUS_FAIL;
-  int original_channel = channel;
+//  int original_channel = channel;
 
   switch (type) {
     case BTSOCK_RFCOMM:

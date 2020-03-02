@@ -39,25 +39,25 @@
  ****************************************************************************/
 
 /* verbose state strings for trace */
-const char* const avdt_ccb_st_str[] = {"CCB_IDLE_ST", "CCB_OPENING_ST",
-                                       "CCB_OPEN_ST", "CCB_CLOSING_ST"};
+// const char* const avdt_ccb_st_str[] = {"CCB_IDLE_ST", "CCB_OPENING_ST",
+//                                        "CCB_OPEN_ST", "CCB_CLOSING_ST"};
 
 /* verbose event strings for trace */
-const char* const avdt_ccb_evt_str[] = {
-    "API_DISCOVER_REQ_EVT", "API_GETCAP_REQ_EVT",
-    "API_START_REQ_EVT",    "API_SUSPEND_REQ_EVT",
-    "API_DISCOVER_RSP_EVT", "API_GETCAP_RSP_EVT",
-    "API_START_RSP_EVT",    "API_SUSPEND_RSP_EVT",
-    "API_CONNECT_REQ_EVT",  "API_DISCONNECT_REQ_EVT",
-    "MSG_DISCOVER_CMD_EVT", "MSG_GETCAP_CMD_EVT",
-    "MSG_START_CMD_EVT",    "MSG_SUSPEND_CMD_EVT",
-    "MSG_DISCOVER_RSP_EVT", "MSG_GETCAP_RSP_EVT",
-    "MSG_START_RSP_EVT",    "MSG_SUSPEND_RSP_EVT",
-    "RCVRSP_EVT",           "SENDMSG_EVT",
-    "RET_TOUT_EVT",         "RSP_TOUT_EVT",
-    "IDLE_TOUT_EVT",        "UL_OPEN_EVT",
-    "UL_CLOSE_EVT",         "LL_OPEN_EVT",
-    "LL_CLOSE_EVT",         "LL_CONG_EVT"};
+// const char* const avdt_ccb_evt_str[] = {
+//     "API_DISCOVER_REQ_EVT", "API_GETCAP_REQ_EVT",
+//     "API_START_REQ_EVT",    "API_SUSPEND_REQ_EVT",
+//     "API_DISCOVER_RSP_EVT", "API_GETCAP_RSP_EVT",
+//     "API_START_RSP_EVT",    "API_SUSPEND_RSP_EVT",
+//     "API_CONNECT_REQ_EVT",  "API_DISCONNECT_REQ_EVT",
+//     "MSG_DISCOVER_CMD_EVT", "MSG_GETCAP_CMD_EVT",
+//     "MSG_START_CMD_EVT",    "MSG_SUSPEND_CMD_EVT",
+//     "MSG_DISCOVER_RSP_EVT", "MSG_GETCAP_RSP_EVT",
+//     "MSG_START_RSP_EVT",    "MSG_SUSPEND_RSP_EVT",
+//     "RCVRSP_EVT",           "SENDMSG_EVT",
+//     "RET_TOUT_EVT",         "RSP_TOUT_EVT",
+//     "IDLE_TOUT_EVT",        "UL_OPEN_EVT",
+//     "UL_CLOSE_EVT",         "LL_OPEN_EVT",
+//     "LL_CLOSE_EVT",         "LL_CONG_EVT"};
 
 /* action function list */
 const tAVDT_CCB_ACTION avdt_ccb_action[] = {
